@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Dimesh Mali | Daily Web Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -11,101 +12,101 @@
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0f0f0f;
-      color: #f1f1f1;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
       padding: 40px 20px;
     }
 
     .container {
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 960px;
+      margin: auto;
     }
 
-    .profile {
+    .profile-card {
       display: flex;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
       align-items: center;
       justify-content: space-between;
-      flex-wrap: wrap;
-      background: #1a1a1a;
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-      margin-bottom: 50px;
     }
 
-    .details {
+    .profile-info {
       flex: 1;
-      min-width: 250px;
+      min-width: 260px;
     }
 
-    .details h2 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      color: #00bfff;
+    .profile-info h2 {
+      font-size: 26px;
+      color: #2a7ae2;
+      margin-bottom: 12px;
     }
 
-    .details p {
-      font-size: 16px;
-      margin: 8px 0;
-      color: #ccc;
+    .profile-info p {
+      margin: 6px 0;
+      font-size: 15px;
+      color: #555;
     }
 
-    .photo {
+    .profile-photo {
       text-align: center;
+      margin-top: 20px;
     }
 
-    .photo img {
-      width: 160px;
-      height: 160px;
+    .profile-photo img {
+      width: 140px;
+      height: 140px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #00bfff;
-      box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+      border: 4px solid #2a7ae2;
+      box-shadow: 0 4px 12px rgba(42, 122, 226, 0.2);
     }
 
     h1 {
       text-align: center;
-      font-size: 32px;
+      font-size: 30px;
+      color: #2a7ae2;
       margin-bottom: 30px;
-      color: #00bfff;
-      text-shadow: 1px 1px 4px #000;
     }
 
-    .buttons {
+    .button-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 16px;
     }
 
     .btn {
-      background: linear-gradient(135deg, #00bfff, #1e90ff);
-      border: none;
+      background-color: #2a7ae2;
       color: white;
-      padding: 15px 30px;
-      font-size: 18px;
-      border-radius: 12px;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 10px;
       cursor: pointer;
-      transition: transform 0.2s, box-shadow 0.2s;
-      box-shadow: 0 4px 10px rgba(0, 191, 255, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(42, 122, 226, 0.2);
     }
 
     .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 15px rgba(0, 191, 255, 0.6);
+      background-color: #1c5db6;
+      transform: translateY(-2px);
     }
 
     @media (max-width: 768px) {
-      .profile {
+      .profile-card {
         flex-direction: column;
-        align-items: center;
         text-align: center;
         gap: 20px;
       }
 
-      .buttons {
-        gap: 15px;
+      .profile-photo {
+        margin-top: 0;
       }
     }
   </style>
@@ -114,24 +115,24 @@
 
   <div class="container">
 
-    <!-- Top Section with Details and Photo -->
-    <div class="profile">
-      <div class="details">
+    <!-- Profile Section -->
+    <div class="profile-card">
+      <div class="profile-info">
         <h2>Dimesh Mali</h2>
         <p><strong>Location:</strong> Satpati, Mumbai, Maharashtra</p>
         <p><strong>Phone:</strong> +91 8446183051</p>
         <p><strong>Email:</strong> dimeshmali5@gmail.com</p>
       </div>
-      <div class="photo">
+      <div class="profile-photo">
         <img src="your-photo.jpeg" alt="Dimesh Mali">
       </div>
     </div>
 
-    <!-- Heading -->
+    <!-- Title -->
     <h1>My Daily Website Projects</h1>
 
-    <!-- Day Buttons -->
-    <div class="buttons">
+    <!-- Buttons -->
+    <div class="button-grid">
       <button class="btn" onclick="window.location.href='https://dimeshday1.vercel.app/'">Day 1</button>
       <button class="btn" onclick="window.location.href='https://dimeshday2.vercel.app/'">Day 2</button>
       <button class="btn" onclick="window.location.href='https://dimeshday3.vercel.app/'">Day 3</button>
